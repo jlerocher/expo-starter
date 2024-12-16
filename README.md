@@ -1,5 +1,4 @@
-# Starter Template for Expo with Typescript and Navigation
-![image](https://github.com/ikhlasdansantai/expo-typescript-nativewind-template/assets/95151018/c567bfee-2126-461a-ba76-9a12edbba1cb)
+# Starter Template for Expo with Typescript, Nativewind and Files based Navigation
 
 including
 - expo-router
@@ -24,28 +23,4 @@ Run your app on emulator or your mobile phone
 npm run start -c
 or 
 npm run android
-```
-
-### Note
-If you encounter the following error message:
-```bash
-Cannot find module '../assets/images/icon.png' or its corresponding type declarations.
-```
-
-You need to declare the type for the respective file format. You can achieve this by adding the following code to `app.d.ts`
-```ts
-declare module "*.png" {
-  const value: ImageSourcePropType;
-  export default value;
-}
-
-declare module "*.jpg" {
-  const value: ImageSourcePropType;
-  export default value;
-}
-
-declare module "*.jpeg" {
-  const value: ImageSourcePropType;
-  export default value;
-}
 ```
